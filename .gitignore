@@ -1,0 +1,21 @@
+﻿__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+AI_proj_env/
+.env
+.streamlit/secrets.toml
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local backups and temporary files
+app_attempt_1.py
+app_backup.py
+check_nutrition.py
+*.zip
+mealmetrics_app_py/
+trail 1/
