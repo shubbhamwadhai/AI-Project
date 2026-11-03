@@ -1,0 +1,22 @@
+{
+    "model_name": "indian_food_classifier_final",
+    "architecture": "MobileNetV2",
+    "training_approach": "Transfer Learning with Fine-Tuning",
+    "input_shape": [
+        224,
+        224,
+        3
+    ],
+    "num_classes": 20,
+    "preprocessing": "Rescaling: pixel / 127.5 - 1.0",
+    "pretrained_weights": "ImageNet",
+    "fine_tuning": {
+        "unfrozen_base_layers": 20,
+        "batch_normalization_layers_frozen": true,
+        "learning_rate": 1e-05,
+        "maximum_epochs": 3,
+        "best_epoch": 2
+    },
+    "model_file": "indian_food_classifier_final.keras",
+    "class_mapping_file": "class_names.json"
+}
